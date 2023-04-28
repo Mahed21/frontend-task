@@ -1,38 +1,203 @@
-.App {
-  text-align: center;
+.header_btn{
+  background-color: #E7E9F6;
+  text-decoration: none;
+  border:none;
+  color: #6a7bea;
+  font-weight: bolder;
+}
+.header_icon{
+color: #6a7bea;
+width: 25px;
+  height: 25px;
+
+}
+.humburger_btn{
+  text-decoration: none;
+  font-weight: bolder;
+  border:none;
+  background-color: white;
+}
+/* sidenav */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:black;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover{
+  background-color: #EEF0F9;
+  color: #6a7bea;
+  font-weight: bolder;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav.open {
+  width: 250px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.sidenavright{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sidenavright a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:black;
+  display: block;
+  transition: 0.3s;
+}
+.sidenavright a:hover{
+  background-color: #EEF0F9;
+  color: #6a7bea;
+  font-weight: bolder;
+}
+
+.sidenavright .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenavright.open {
+  width: 1000px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
   }
 }
+/* sidenav end*/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.go_billing{
+  background-color:#EFEFEF;
+  font-weight: bolder;
+}
+.profile{
+  background-color: #EEF0F9;
+  color: #6a7bea;
+  font-weight: bolder;
+}
+.table_body {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.header_icon_delte{
+  color: #E55C57;
+  width: 25px;
+  height: 25px;
+}
+.header_icon_count{
+  color: #84919C;
+  width: 25px;
+  height: 25px;
+}
+.table_parent{
+  color: #7c8892;
+  
+}
+.table{
+  color: #7c8892;
+  
+}
+.calculated_result{
+  color:black;
+}
+.discount{
+  color: #6a7bea;
+  font-weight: bolder;
+}
+.cancel_icon{
+  color: #E55C57;
+  width: 25px;
+  height: 25px;
+}
+.cancel_btn{
+  background-color: #FADEDD;
+  text-decoration: none;
+  border:none;
+  color: red;
+  
+}
+.acticve_category{
+  
+  border:1px solid #6a7bea ;
+  color: #6a7bea;
+  font-weight: bolder;
+}
+.all_categories{
+  
+  border:1px solid black ;
+  color: black;
+  background-color: white;
+  
+}
+
+.searhbar{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  color: #84919C;
+}
+input{
+  border:none;
+  border-bottom: 1px solid black;
+ 
+  outline: none;
+
+}
+.form_btn{
+  background-color: #3674D9;
+  text-decoration: none;
+  border:none;
   color: white;
+  font-weight: bolder;
 }
-
-.App-link {
-  color: #61dafb;
+.payment-form{
+  min-height:115vh;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.vl {
+  border-left: 1px solid #7c8892;
+  min-height: 115vh;
+  padding: 0 !important;
+}
+.payment_form_btn{
+ margin-top: 85vh;;
+}
+.complete_payment{
+  background-color: #3674D9;
+  color:white;
+  font-weight: bolder;
 }
